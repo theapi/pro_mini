@@ -28,6 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:pro_mini
+LIBS:pro_mini-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -351,9 +353,9 @@ Text GLabel 4800 3800 0    60   Input ~ 0
 A6
 Text GLabel 3800 3800 2    60   Input ~ 0
 A7
-Text GLabel 3800 3600 2    60   Input ~ 0
-A4
 Text GLabel 3800 3700 2    60   Input ~ 0
+A4
+Text GLabel 3800 3600 2    60   Input ~ 0
 A5
 $Comp
 L C C4
@@ -380,4 +382,65 @@ $EndComp
 Connection ~ 6650 1850
 Text Label 9800 3200 2    60   ~ 0
 RESET
+$Comp
+L MCP1700T-3302E U1
+U 1 1 573733AD
+P 2500 1850
+F 0 "U1" H 2300 2050 50  0000 C CNN
+F 1 "MCP1700T-3302E" H 2500 2050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT89-3_Housing_Handsoldering" H 2500 1950 50  0000 C CIN
+F 3 "" H 2500 1850 50  0000 C CNN
+	1    2500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 573737E7
+P 3100 1950
+F 0 "C6" H 3125 2050 50  0000 L CNN
+F 1 "1uF" H 3125 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3138 1800 50  0001 C CNN
+F 3 "" H 3100 1950 50  0000 C CNN
+	1    3100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 57373849
+P 1850 1950
+F 0 "C5" H 1875 2050 50  0000 L CNN
+F 1 "1uF" H 1875 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1888 1800 50  0001 C CNN
+F 3 "" H 1850 1950 50  0000 C CNN
+	1    1850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5737390F
+P 2500 2300
+F 0 "#PWR08" H 2500 2050 50  0001 C CNN
+F 1 "GND" H 2500 2150 50  0000 C CNN
+F 2 "" H 2500 2300 50  0000 C CNN
+F 3 "" H 2500 2300 50  0000 C CNN
+	1    2500 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1800 2100 1800
+Wire Wire Line
+	2900 1800 3700 1800
+Wire Wire Line
+	1850 2100 3100 2100
+Connection ~ 2500 2100
+Wire Wire Line
+	2500 2300 2500 2100
+Text GLabel 1500 1800 0    60   Input ~ 0
+RAW
+Connection ~ 1850 1800
+Text GLabel 3700 1800 2    60   Input ~ 0
+VCC
+Connection ~ 3100 1800
+Text GLabel 4800 3600 0    60   Input ~ 0
+RAW
 $EndSCHEMATC

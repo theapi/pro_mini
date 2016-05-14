@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MC78L05ACH
+D Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP MC78L08ACH
+D Positive 100mA 30V Linear Regulator, Fixed Output 8V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP MC78L12ACH
+D Positive 100mA 30V Linear Regulator, Fixed Output 12V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP MCP1700T-3302E
+D Fixed LDO Voltage Regulator, 2.3V to 6V, 178mV Dropout, 3.3Vout, 250mAout, SOT-89-3
+K Voltage Regulator 250mA Positive
+F http://www.farnell.com/datasheets/77612.pdf
+$ENDCMP
+#
+#End Doc Library
