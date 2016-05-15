@@ -6,12 +6,12 @@ Original: https://www.arduino.cc/en/Main/ArduinoBoardProMini
 
 
 CHANGES:
-- 3V3 ONLY
-- Internal oscillator only
-- Moved the I2C pins to the side
-- Moved A6 & A7 to the side
+- 3V3
+- Internal oscillator
+- XTAL pins on the side header
+- Moved the I2C pins to the side header
 - Removed Power LED
 - 0805 parts with hand solder friendly pads
 - No reset switch
-- No reset on side headers
+- Only one reset on side headers
 - Low power led on pin 13

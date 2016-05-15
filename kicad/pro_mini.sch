@@ -67,8 +67,6 @@ Text GLabel 9200 2150 2    60   Input ~ 0
 MISO
 Text GLabel 10650 2250 2    60   Input ~ 0
 SCK
-NoConn ~ 9200 2350
-NoConn ~ 9200 2450
 Text GLabel 9200 2600 2    60   Input ~ 0
 A0
 Text GLabel 9200 2700 2    60   Input ~ 0
@@ -226,42 +224,40 @@ Connection ~ 10400 2250
 $Comp
 L R R1
 U 1 1 5736F4EB
-P 10050 3050
-F 0 "R1" V 10130 3050 50  0000 C CNN
-F 1 "10K" V 10050 3050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9980 3050 50  0001 C CNN
-F 3 "" H 10050 3050 50  0000 C CNN
-	1    10050 3050
+P 9700 3050
+F 0 "R1" V 9780 3050 50  0000 C CNN
+F 1 "10K" V 9700 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9630 3050 50  0001 C CNN
+F 3 "" H 9700 3050 50  0000 C CNN
+	1    9700 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR06
 U 1 1 5736F56F
-P 10050 2900
-F 0 "#PWR06" H 10050 2750 50  0001 C CNN
-F 1 "VCC" H 10050 3050 50  0000 C CNN
-F 2 "" H 10050 2900 50  0000 C CNN
-F 3 "" H 10050 2900 50  0000 C CNN
-	1    10050 2900
+P 9700 2900
+F 0 "#PWR06" H 9700 2750 50  0001 C CNN
+F 1 "VCC" H 9700 3050 50  0000 C CNN
+F 2 "" H 9700 2900 50  0000 C CNN
+F 3 "" H 9700 2900 50  0000 C CNN
+	1    9700 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C3
 U 1 1 5736F5A2
-P 10050 3350
-F 0 "C3" H 10075 3450 50  0000 L CNN
-F 1 "0.1uF" H 10075 3250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10088 3200 50  0001 C CNN
-F 3 "" H 10050 3350 50  0000 C CNN
-	1    10050 3350
+P 9700 3350
+F 0 "C3" H 9725 3450 50  0000 L CNN
+F 1 "0.1uF" H 9725 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9738 3200 50  0001 C CNN
+F 3 "" H 9700 3350 50  0000 C CNN
+	1    9700 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9200 3200 10050 3200
-Text GLabel 10650 3500 2    60   Input ~ 0
+Text GLabel 9950 3500 2    60   Input ~ 0
 DTR
 Wire Wire Line
-	10650 3500 10050 3500
+	9950 3500 9700 3500
 $Comp
 L CONN_01X06 P1
 U 1 1 5736F7C9
@@ -296,8 +292,6 @@ F 3 "" H 3600 4150 50  0000 C CNN
 	1    3600 4150
 	-1   0    0    1   
 $EndComp
-Text GLabel 3800 3900 2    60   Input ~ 0
-GND
 Text GLabel 3800 4000 2    60   Input ~ 0
 D2
 Text GLabel 3800 4100 2    60   Input ~ 0
@@ -345,14 +339,6 @@ Text GLabel 4800 4600 0    60   Input ~ 0
 MOSI
 Text GLabel 4800 4700 0    60   Input ~ 0
 D10
-Text GLabel 7300 3100 0    60   Input ~ 0
-A6
-Text GLabel 7300 3200 0    60   Input ~ 0
-A7
-Text GLabel 4800 3800 0    60   Input ~ 0
-A6
-Text GLabel 3800 3800 2    60   Input ~ 0
-A7
 Text GLabel 3800 3700 2    60   Input ~ 0
 A4
 Text GLabel 3800 3600 2    60   Input ~ 0
@@ -380,8 +366,6 @@ F 3 "" H 6250 2150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6650 1850
-Text Label 9800 3200 2    60   ~ 0
-RESET
 $Comp
 L MCP1700T-3302E U1
 U 1 1 573733AD
@@ -443,4 +427,21 @@ VCC
 Connection ~ 3100 1800
 Text GLabel 4800 3600 0    60   Input ~ 0
 RAW
+NoConn ~ 7300 3200
+Text GLabel 9200 2350 2    60   Input ~ 0
+PB6
+Text GLabel 9200 2450 2    60   Input ~ 0
+PB7
+Text GLabel 3800 3800 2    60   Input ~ 0
+PB6
+Text GLabel 3800 3900 2    60   Input ~ 0
+PB7
+NoConn ~ 7300 3100
+Text GLabel 9950 3200 2    60   Input ~ 0
+RESET
+Text GLabel 4800 3800 0    60   Input ~ 0
+RESET
+Wire Wire Line
+	9200 3200 9950 3200
+Connection ~ 9700 3200
 $EndSCHEMATC
